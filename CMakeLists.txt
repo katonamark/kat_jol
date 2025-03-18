@@ -31,4 +31,8 @@ install(TARGETS
 # simple_sub_node
 DESTINATION lib/${PROJECT_NAME})
 
+add_executable(car_draw src/car_draw.cpp)
+ament_target_dependencies(car_draw rclcpp geometry_msgs)
+install(TARGETS car_draw DESTINATION lib/${PROJECT_NAME})
+
 ament_package()
