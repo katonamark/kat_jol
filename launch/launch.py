@@ -9,7 +9,7 @@ def generate_launch_description():
             name='sim'
         ),
         Node(
-            package='kat_jol_car_draw',
+            package='kat_jol',
             executable='car_draw',
             output='screen',
         ),
