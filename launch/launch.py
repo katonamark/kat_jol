@@ -10,7 +10,7 @@ def generate_launch_description():
         ),
         Node(
             package='kat_jol',
-            executable='car_draw',
+            executable='star_draw',
             output='screen',
         ),
     ])

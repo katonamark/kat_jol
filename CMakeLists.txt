@@ -24,16 +24,15 @@ set(ament_dependencies
 # add_executable(simple_sub_node src/print_pose.cpp)
 # ament_target_dependencies(simple_sub_node ${ament_dependencies} )
 
-add_executable(car_draw src/car_draw.cpp)
-ament_target_dependencies(car_draw rclcpp geometry_msgs)
+add_executable(star_draw src/star_draw.cpp)
+ament_target_dependencies(star_draw rclcpp geometry_msgs)
 
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME})
 
 install(TARGETS
-# car_draw
+star_draw #
 DESTINATION lib/${PROJECT_NAME})
-
 
 
 ament_package()

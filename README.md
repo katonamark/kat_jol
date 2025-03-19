@@ -1,5 +1,7 @@
 # `kat_jol` package
 ROS 2 C++ package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
+
+A package egy node-ból áll, ez a turtlesim szimulátorban képes a trajektóra kirajzolásával egy 5 ágú csillag előállítására. A hirdetett topic geometry_msgs/twist típusú. Megvalósítás ROS 2 Humble alatt.
 ## Packages and build
 
 It is assumed that the workspace is `~/ros2_ws/`.
