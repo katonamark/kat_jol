@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(kat_jol_ros2_package)
+project(kat_jol)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -24,15 +24,15 @@ set(ament_dependencies
 # add_executable(simple_sub_node src/print_pose.cpp)
 # ament_target_dependencies(simple_sub_node ${ament_dependencies} )
 
+add_executable(star_draw src/star_draw.cpp)
+ament_target_dependencies(star_draw rclcpp geometry_msgs)
+
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME})
 
 install(TARGETS
-# simple_sub_node
+star_draw #
 DESTINATION lib/${PROJECT_NAME})
 
-add_executable(car_draw src/car_draw.cpp)
-ament_target_dependencies(car_draw rclcpp geometry_msgs)
-install(TARGETS car_draw DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
